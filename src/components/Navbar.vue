@@ -3,10 +3,10 @@
     <div class="sidebar">
       <img src="../assets/img/icons8-menu-24.png" width="20px" height="20px" alt="menu">
     </div>
-    <div class="search" style="max-width:400px;margin:auto">
-      <div class="input-icons">
-        <!-- <i class="fas fa-search"></i> -->
-        <input class="input-field" type="text">
+    <div class="search">
+      <div class="input-icon">
+        <i class="fas fa-search"></i>
+        <input class="input-field" type="text" placeholder="search here">
       </div>
     </div>
     <div class="btn-nav">
@@ -49,14 +49,21 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     input{
       width: 400px;
       height: 35px;
       border-radius: 3px;
       outline: none;
       border: 1px solid rgba(0, 0, 0, 0.233);
-      padding: 0 20px;
+      padding: 0 40px;
+    }
+    .input-icon{
+      position: relative;
+      .fas{
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
     }
   }
   .btn-nav{
@@ -79,6 +86,9 @@ export default {
       background-color: rgb(255, 255, 255);
       border: 1px solid rgba(0, 0, 0, 0.623);
       color: rgba(0, 0, 0, 0.623);
+      font-size: 13px;
+      font-weight: 700;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
       }
       .btn-reg{
         background-color: cadetblue;

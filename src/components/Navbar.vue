@@ -30,7 +30,7 @@ export default {
   display: flex;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322);
   justify-content: space-between;
-  position: relative;
+  position: fixed;
   top: 0;
   z-index: 5;
   .sidebar{

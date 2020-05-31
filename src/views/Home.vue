@@ -1,8 +1,10 @@
 <template>
   <div class="home">
-    <navbar/>
-    <sidebar/>
-    <jumbotron/>
+    <navbar />
+    <sidebar />
+    <jumbotron />
+    <carrousel />
+    <item />
   </div>
 </template>
 
@@ -12,6 +14,8 @@
 import Navbar from '../components/Navbar.vue';
 // import Sidebar from '../components/Sidebar.vue';
 import Jumbotron from '../components/Jumbotron.vue';
+import Carrousel from '../components/Carrousel.vue';
+import Item from '../components/Item.vue';
 
 export default {
   name: 'Home',
@@ -20,10 +24,12 @@ export default {
     Navbar,
     // Sidebar,
     Jumbotron,
+    Carrousel,
+    Item,
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

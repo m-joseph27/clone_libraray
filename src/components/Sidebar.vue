@@ -8,7 +8,14 @@
         <header> <img src="../assets/img/foto-cv.jpg" alt="profile-pic"></header>
         <footer><h3>Muhammad Yusuf</h3></footer>
       </div>
-      <div class="menuSide"></div>
+      <div class="menuSide">
+        <ul>
+          <li>Explore</li>
+          <li>History</li>
+          <li>Add Book*</li>
+          <li>Logout</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -24,9 +31,9 @@ export default {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0);
-  position: relative;
+  position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 6;
   display: none;
   .sidebarParent{
     width: 400px;
@@ -37,14 +44,17 @@ export default {
     .topSide{
       background-color: rgb(255, 255, 255);
       width: 100%;
-      height: 50px;
+      height: 60px;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.301);
       display: flex;
       justify-content: flex-end;
       padding-right: 30px;
       align-items: center;
       box-sizing: border-box;
-      cursor: pointer;
+      i{
+        font-size: 20px;
+        cursor: pointer;
+      }
     }
     .profileSide{
       width: 100%;
@@ -61,13 +71,22 @@ export default {
         background-color: rgb(0, 0, 0);
         border-radius: 100%;
         overflow: hidden;
-        margin-top: 10px;
+        margin: 15px 0;
         img{
           object-fit: cover;
           height: 100%;
           width: 100%;
           object-position: center;
         }
+      }
+    }
+    .menuSide{
+      width: 100%;
+      // height: 140px;
+      li{
+        padding-top: 30px;
+        list-style: none;
+        height: 40px;
       }
     }
   }

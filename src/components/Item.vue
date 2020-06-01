@@ -4,7 +4,7 @@
       <h3>List Book</h3>
     </div>
     <div class="listContent">
-      <div class="cardList">
+      <router-link to="/detail"> <div class="cardList">
         <div class="cardImage">
           <img src="../assets/img/dilan.jpeg" alt="cardImage">
         </div>
@@ -18,6 +18,7 @@
             temporibus</footer>
         </div>
       </div>
+      </router-link>
       <div class="cardList">
         <div class="cardImage">
           <img src="../assets/img/ubur-ubur.png" alt="cardImage">

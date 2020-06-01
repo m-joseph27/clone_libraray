@@ -1,5 +1,6 @@
 <template>
   <div class="carrouselWrapper">
+    <router-link to="/detail">
     <div class="carousel"
       data-flickity='{ "wrapAround": true }'>
       <div class="carousel-cell">
@@ -30,7 +31,8 @@
           <footer>hoseph</footer>
         </div>
       </div>
-  </div>
+    </div>
+    </router-link>
   </div>
 </template>
 

@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      ::-webkit-scrollbar {
+      width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+      -webkit-border-radius: 10px;
+      border-radius: 5px;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      border-radius: 1px;
+      background: rgb(122, 131, 130);
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+      background: rgb(81, 82, 81); 
+    }
+    </style>
   </head>
   <body>
     <noscript>

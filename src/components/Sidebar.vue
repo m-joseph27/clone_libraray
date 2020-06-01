@@ -26,9 +26,8 @@ export default {
   background-color: rgba(0, 0, 0, 0);
   position: relative;
   top: 0;
-  z-index: 6;
-  display: flex;
-  visibility: hidden;
+  z-index: 5;
+  display: none;
   .sidebarParent{
     width: 400px;
     height: 100vh;

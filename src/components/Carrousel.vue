@@ -45,10 +45,6 @@ export default {
 
 body { font-family: sans-serif; }
 
-.carousel {
-  background: rgb(255, 255, 255);
-}
-
 .carousel-cell {
   width: 40%;
   height: 300px;

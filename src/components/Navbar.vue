@@ -52,6 +52,7 @@ export default {
   width: 100%;
   height: 60px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.103);
+  z-index: 5;
   .sidebarSide{
     width: 50px;
     height: 50px;

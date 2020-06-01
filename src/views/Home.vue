@@ -5,6 +5,7 @@
     <jumbotron />
     <carrousel />
     <item />
+    <addbook />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import Sidebar from '../components/Sidebar.vue';
 import Jumbotron from '../components/Jumbotron.vue';
 import Carrousel from '../components/Carrousel.vue';
 import Item from '../components/Item.vue';
+import Addbook from '../components/Addbook.vue';
 
 export default {
   name: 'Home',
@@ -26,6 +28,7 @@ export default {
     Jumbotron,
     Carrousel,
     Item,
+    Addbook,
   },
 };
 </script>

@@ -79,6 +79,9 @@ export default {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    a{
+      text-decoration: none;
+    }
     .cardList{
       width: 320px;
       height: 340px;
@@ -104,6 +107,7 @@ export default {
         background-color: rgb(255, 255, 255);
         text-align: center;
         overflow: hidden;
+        color: black;
         header{
           font-size: 20px;
           font-weight: 600;

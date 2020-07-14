@@ -1,34 +1,36 @@
 <template>
   <div class="home">
-    <navbar />
-    <sidebar />
+    <navbar @nav-clicked="sideBar" />
     <jumbotron />
     <carrousel />
     <item />
-    <addbook />
+    <sidebar @left-arrow="hideModal"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue';
 import Navbar from '../components/Navbar.vue';
-import Sidebar from '../components/Sidebar.vue';
 import Jumbotron from '../components/Jumbotron.vue';
 import Carrousel from '../components/Carrousel.vue';
 import Item from '../components/Item.vue';
-import Addbook from '../components/Addbook.vue';
+import Sidebar from '../components/Sidebar.vue';
 
 export default {
   name: 'Home',
   components: {
-    // HelloWorld,
     Navbar,
-    Sidebar,
     Jumbotron,
     Carrousel,
     Item,
-    Addbook,
+    Sidebar,
+  },
+  methods: {
+    sideBar() {
+      document.querySelector('.SidebarWrapper').classList.add('sideActive');
+    },
+    hideModal() {
+      document.querySelector('.SidebarWrapper').classList.remove('sideActive');
+    },
   },
 };
 </script>

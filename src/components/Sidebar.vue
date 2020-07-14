@@ -1,7 +1,7 @@
 <template>
   <div class="SidebarWrapper">
     <div class="sidebarParent">
-      <div class="topSide">
+      <div class="topSide" @click="$emit('left-arrow')">
         <i class="fas fa-chevron-left"></i>
       </div>
       <div class="profileSide">
@@ -27,14 +27,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.SidebarWrapper.sideActive{
+  left: 0;
+  position: fixed;
+  z-index: 99;
+  visibility: visible;
+}
+
 .SidebarWrapper{
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   z-index: 6;
-  display: none;
+  visibility: hidden;
+  transition: ease-in .1s;
   .sidebarParent{
     width: 400px;
     height: 100vh;
@@ -51,6 +60,9 @@ export default {
       padding-right: 30px;
       align-items: center;
       box-sizing: border-box;
+      &:active{
+        transform: translateX(2px);
+      }
       i{
         font-size: 20px;
         cursor: pointer;

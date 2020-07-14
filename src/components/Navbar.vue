@@ -1,14 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="navbar">
-      <!-- <div class="sidebarSide"></div> -->
       <button class="navbar-toggler" type="button"
       data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="sidebarSide">
+        <div class="sidebarSide" @click="$emit('nav-clicked',$event.target)">
           <img src="../assets/img/icons8-menu-24.png" alt="menu">
         </div>
         <div class="content-sort">
@@ -60,6 +59,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    &:active{
+      transform: translateY(2px)
+    }
     cursor: pointer;
   }
   .content-sort{

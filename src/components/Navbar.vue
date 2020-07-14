@@ -55,12 +55,16 @@ export default {
   .sidebarSide{
     width: 50px;
     height: 50px;
+    border-radius: 100%;
     // background-color: cadetblue;
     display: flex;
     justify-content: center;
     align-items: center;
     &:active{
       transform: translateY(2px)
+    }
+    &:hover{
+      background: rgba(0, 0, 0, 0.103);
     }
     cursor: pointer;
   }

@@ -50,6 +50,7 @@ export default {
     background: rgb(255, 255, 255);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.301);
     // display: flex;
+    overflow: hidden;
     .topSide{
       background-color: rgb(255, 255, 255);
       width: 100%;
